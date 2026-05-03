@@ -1,0 +1,25 @@
+body{
+    background-color:aqua ;
+}
+
+pre, table{
+    color: brown;
+    background-color: blue;
+}
+
+.headers{
+    color: chocolate;
+    border-radius: 20px;
+}
+
+#faceimage{
+    border-radius: 100px;
+    height: 100px;
+    width: 100px;
+}
+
+h1{
+    position: relative;
+    float: right;
+}
+

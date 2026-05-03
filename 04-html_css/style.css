@@ -1,0 +1,25 @@
+body{
+    height: 100vh;
+}
+header{
+    width: 100%;
+    height: 50px;
+}
+article{
+    height: 75%;
+}
+
+#myDiv{
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    position: absolute;
+    left: 100px;
+    top: 100px;
+}
+
+#myDiv1{
+    width: 100%;
+    height: 600px;
+    background-color: blue;
+}

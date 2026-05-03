@@ -1,0 +1,52 @@
+/* Basic styling for the body */
+body {
+    font-family: Arial, sans-serif;
+    display: flex; /* Centers the grid on the page */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f4f4f9;
+}
+
+/* 1. Define the Grid Container */
+.grid-container {
+    display: grid; /* THE key declaration to activate Grid layout */
+    
+    /* 2. Define Columns */
+    /* Creates 3 columns, each taking up an equal fraction (1fr) of the available space */
+    grid-template-columns: 1fr 1fr 1fr;
+    
+    /* 3. Define Rows (Optional, but good for explicit sizing) */
+    /* Sets the height of each row to 150 pixels */
+    grid-template-rows: 150px 150px 150px; 
+    
+    /* 4. Define Spacing (Gutters) */
+    grid-gap: 10px; /* Space between the grid items (both rows and columns) */
+    
+    width: 500px; /* Optional: Sets a max width for the entire grid */
+    padding: 10px;
+    border: 2px solid #333;
+}
+
+/* Styling for all Grid Items (the boxes) */
+.grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Different background colors for visual distinction */
+.item-1 { background-color: #e74c3c; } /* Red */
+.item-2 { background-color: #3498db; } /* Blue */
+.item-3 { background-color: #2ecc71; } /* Green */
+.item-4 { background-color: #f1c40f; } /* Yellow */
+.item-5 { background-color: #9b59b6; } /* Purple */
+.item-6 { background-color: #1abc9c; } /* Turquoise */
+.item-7 { background-color: #e67e22; } /* Orange */
+.item-8 { background-color: #34495e; } /* Dark Blue */
+.item-9 { background-color: #7f8c8d; } /* Gray */

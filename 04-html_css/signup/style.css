@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+	margin-top: 0px;
+}
+#container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+}
+
+.left{
+    background-color: #023f80;
+    width: 50%;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center ;
+    justify-content: center;
+    gap: 30px;
+    
+}
+
+.left > .banner-heading{
+    color: #fff;
+    font-size: 32px;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 450px;
+    font-weight: 400;
+}
+
+.right {
+    width: 50%;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-items: center;
+    padding: 40px 64px;
+}
+
+.right > h1 {
+    color: #023f80;
+    font-size: 25px;
+}
+
+.right > p {
+    font-size: 25px;
+    color: black;
+    font-weight: 700;
+}
+
+#signup {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding-top: 10px;
+}
+
+.social-buttons {
+    display: flex;
+    gap: 14px;
+}
+
+.btn {
+    width: 224px;
+    height: 40px;
+    background-color: azure;
+    color: #023f80;
+    border-radius: 10px;
+    border: 1px solid #023f80;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #023f80;
+    color: azure;
+}
+
+#signup > label {
+    color: #001d3c;
+    text-transform: capitalize;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+#signup > input {
+    width: calc(100% - 50px);
+    padding: 10px;
+    border: none;
+    outline: 1px solid #d0d3db;
+    border-radius: 5px;
+}
+
+#signup > button {
+    background-color: #023f80;
+    color: #fff;
+    width: calc(100% - 50px);
+    margin: 5px 0px;
+    border-radius: 30px;
+}
+
+#signup > button:hover {
+    background-color: #fff;
+    color: #023f80;
+}
+
+
+a {
+    color: #023f80;
+}
