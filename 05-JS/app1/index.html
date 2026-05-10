@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Page</title>
+</head>
+<body>
+    <h1>Calculator</h1>
+    <form>
+        <label for="num1">Num1</label>
+        <input type="number" name="num1" id="num1">
+        <label for="num2">Num2</label>
+        <input type="number" name="num2" id="num2">
+        <!-- <button type="submit" onclick="handleClick()">Calculate</button> -->
+        <button type="submit" id="submitbtn">Calculate</button>
+    </form>
+    <h2>Result of Calculation: </h2>
+    <p id="resultele">
+        <p id="mypara1">
+
+        </p>
+        <p id="mypara2">
+            
+        </p>
+        <a id="mylink1">
+
+        </a>
+    </p>
+    <script type="text/javascript">
+        const submitbtn = document.getElementById("submitbtn")
+        submitbtn.addEventListener("click", handleClick)
+
+        function handleClick(event){
+            let num1 = parseInt(document.getElementById("num1").value) 
+            let num2 = parseInt(document.getElementById("num2").value) 
+            let resultele = document.getElementById("resultele")
+
+            // if(num1 < 0 || num2 < 0){
+            //     alert("Please Enter positive number only")
+            // }else{
+            //     alert(`The sum of ${num1} & ${num2} is ${num1+num2}`)
+            // }
+
+
+            if(num1 < 0 || num2 < 0){
+                alert("Please Enter positive number only")
+            }else{
+                resultele.textContent = `The sum of ${num1} & ${num2} is ${num1+num2}` 
+                // console.log(`The sum of ${num1} & ${num2} is ${num1+num2}`)
+            }
+            event.preventDefault()
+
+           }
+
+
+           let arr1 = ["vishwas","arjun","disha"]
+           for(i = 0; i<arr1.length;i++){
+            console.log(arr1[i])
+           }
+
+           arr1.forEach(element => {
+            console.log(element)
+           });
+
+
+    </script>
+</body>
+</html>
