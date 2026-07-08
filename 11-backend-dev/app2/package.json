@@ -1,0 +1,20 @@
+{
+  "name": "password-manager",
+  "version": "1.0.0",
+  "description": "A CLI based password manager using nodeJS",
+  "license": "ISC",
+  "author": "Vishwas Singh",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "pm": "./index.js"
+  },
+  "dependencies": {
+    "chalk": "^5.6.2",
+    "commander": "^15.0.0",
+    "inquirer": "^14.0.2"
+  }
+}
