@@ -136,7 +136,7 @@ SELECT
 FROM Customer c 
 LEFT JOIN CustomerAddress ca 
 	ON c.CustomerID = ca.CustomerID
-WHERE ca.AddressID IS NOT NULL
+WHERE ca.AddressID IS NULL
 ORDER BY CustomerID;
 
 -- Verify
