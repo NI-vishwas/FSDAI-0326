@@ -1,0 +1,51 @@
+title,director,genre,releaseYear,rating,durationMinutes,language,country,budgetMillions,revenueMillions,isOscarWinner
+Inception,Christopher Nolan,Sci-Fi,2010,8.8,148,English,USA,160,839.0,true
+The Dark Knight,Christopher Nolan,Action,2008,9.0,152,English,USA,185,1006.0,true
+Interstellar,Christopher Nolan,Sci-Fi,2014,8.7,169,English,USA,165,701.7,false
+Parasite,Bong Joon-ho,Thriller,2019,8.5,132,Korean,South Korea,11,258.0,true
+Avatar,James Cameron,Sci-Fi,2009,7.9,162,English,USA,237,2923.0,true
+Titanic,James Cameron,Romance,1997,7.9,195,English,USA,200,2264.0,true
+Gladiator,Ridley Scott,Action,2000,8.5,155,English,USA,103,460.5,true
+The Martian,Ridley Scott,Sci-Fi,2015,8.0,144,English,USA,108,630.6,false
+Joker,Todd Phillips,Drama,2019,8.4,122,English,USA,55,1078.0,true
+The Godfather,Francis Ford Coppola,Crime,1972,9.2,175,English,USA,7.2,250.3,true
+The Godfather Part II,Francis Ford Coppola,Crime,1974,9.0,202,English,USA,13,93.0,true
+Pulp Fiction,Quentin Tarantino,Crime,1994,8.9,154,English,USA,8,213.9,true
+Django Unchained,Quentin Tarantino,Western,2012,8.5,165,English,USA,100,426.1,true
+Kill Bill Vol. 1,Quentin Tarantino,Action,2003,8.2,111,English,USA,30,180.9,false
+Kill Bill Vol. 2,Quentin Tarantino,Action,2004,8.0,136,English,USA,30,152.2,false
+The Shawshank Redemption,Frank Darabont,Drama,1994,9.3,142,English,USA,25,73.3,false
+The Green Mile,Frank Darabont,Drama,1999,8.6,189,English,USA,60,286.8,false
+Forrest Gump,Robert Zemeckis,Drama,1994,8.8,142,English,USA,55,678.2,true
+Cast Away,Robert Zemeckis,Adventure,2000,7.8,143,English,USA,90,429.6,false
+Back to the Future,Robert Zemeckis,Sci-Fi,1985,8.5,116,English,USA,19,388.8,false
+The Matrix,Lana Wachowski,Sci-Fi,1999,8.7,136,English,USA,63,467.6,true
+The Matrix Reloaded,Lana Wachowski,Sci-Fi,2003,7.2,138,English,USA,150,741.8,false
+The Matrix Revolutions,Lana Wachowski,Sci-Fi,2003,6.8,129,English,USA,150,427.3,false
+Spirited Away,Hayao Miyazaki,Animation,2001,8.6,125,Japanese,Japan,19,395.8,true
+Howl's Moving Castle,Hayao Miyazaki,Animation,2004,8.2,119,Japanese,Japan,24,236.2,false
+Princess Mononoke,Hayao Miyazaki,Animation,1997,8.4,134,Japanese,Japan,23.5,169.8,false
+Whiplash,Damien Chazelle,Drama,2014,8.5,107,English,USA,3.3,49.0,true
+La La Land,Damien Chazelle,Musical,2016,8.0,128,English,USA,30,471.0,true
+First Man,Damien Chazelle,Biography,2018,7.3,141,English,USA,59,105.7,false
+Mad Max: Fury Road,George Miller,Action,2015,8.1,120,English,Australia,150,380.4,true
+1917,Sam Mendes,War,2019,8.3,119,English,UK,95,384.9,true
+Skyfall,Sam Mendes,Action,2012,7.8,143,English,UK,200,1108.6,true
+No Time to Die,Cary Joji Fukunaga,Action,2021,7.3,163,English,UK,301,774.2,false
+The Batman,Matt Reeves,Action,2022,7.8,176,English,USA,185,770.8,false
+The Prestige,Christopher Nolan,Mystery,2006,8.5,130,English,USA,40,109.7,false
+Memento,Christopher Nolan,Thriller,2000,8.4,113,English,USA,9,40.0,false
+Oppenheimer,Christopher Nolan,Biography,2023,8.4,180,English,USA,100,975.0,true
+Dune,Denis Villeneuve,Sci-Fi,2021,8.0,155,English,USA,165,402.0,true
+Blade Runner 2049,Denis Villeneuve,Sci-Fi,2017,8.0,164,English,USA,185,267.5,true
+Arrival,Denis Villeneuve,Sci-Fi,2016,7.9,116,English,USA,47,203.4,false
+The Grand Budapest Hotel,Wes Anderson,Comedy,2014,8.1,99,English,USA,25,174.8,true
+Fantastic Mr. Fox,Wes Anderson,Animation,2009,7.9,87,English,USA,40,46.5,false
+The French Dispatch,Wes Anderson,Comedy,2021,7.1,108,English,USA,25,46.3,false
+Black Panther,Ryan Coogler,Action,2018,7.3,134,English,USA,200,1349.9,true
+Creed,Ryan Coogler,Sport,2015,7.6,133,English,USA,35,173.6,false
+Rocky,Bryan G. Avildsen,Sport,1976,8.1,120,English,USA,1.1,225.0,true
+The Lion King,Roger Allers,Animation,1994,8.5,88,English,USA,45,968.5,true
+Toy Story,John Lasseter,Animation,1995,8.3,81,English,USA,30,394.4,true
+Finding Nemo,Andrew Stanton,Animation,2003,8.2,100,English,USA,94,940.3,true
+Coco,Lee Unkrich,Animation,2017,8.4,105,English,USA,175,807.8,true
