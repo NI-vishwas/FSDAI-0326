@@ -1,0 +1,13 @@
+body {
+    /* Ensures no default margin or padding */
+    margin: 0;
+    padding: 0;
+    /* Box-sizing consistency */
+    box-sizing: border-box; 
+}
+.highlightGreen{
+    background-color: green;
+}
+.highlightRed{
+    background-color: red;
+}

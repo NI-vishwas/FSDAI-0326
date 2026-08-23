@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Email Classifier</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">SC</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container gx-2 gy-2">
+        <h1>Welcome to SPAM CHECKER</h1>
+        <p>Paste the text below to check</p>
+        <textarea name="inpmsg" id="inpmsg" cols="70" rows="10"></textarea><br>
+        <input class="btn btn-primary mt-2 mb-2" type="button" value="Analyze" id="analyzebtn" />
+        <div class=" d-flex flex-column text-start">
+            Result: <br>
+            <p id="result"></p>
+        </div>
+    </div>
+    <footer class="py-5 bg-body-secondary mb-0">
+        <p class="text-center text-body-secondary mb-0">© 2025 Vishwas K Singh</p>
+    </footer>
+    <script>
+        let analyzebtn = document.getElementById('analyzebtn')
+        let result = document.getElementById('result')
+        const API_ENDPOINT = 'http://localhost:5000/analyze'
+        let inp_message = document.getElementById('inpmsg')
+
+
+        analyzebtn.addEventListener('click', async () => {
+            analyzebtn.value = "Analyzing..."
+            analyzebtn.disabled = true
+            const postData = {
+                message: inp_message.value
+            }
+            const response = await fetch(API_ENDPOINT, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(postData)
+            })
+
+            if (!response.ok) {
+                result.textContent = `HTTP error! Status: ${response.status}`
+            } else{
+                const data = await response.json()
+                result.textContent = data.category
+                analyzebtn.disabled = false
+                if (data.category == 'NOT SPAM') {
+                    result.classList.remove(...result.classList)
+                    result.classList.add('highlightGreen')
+                } else if (data.category == "SPAM") {
+                    result.classList.remove(...result.classList)
+                    result.classList.add('highlightRed')
+                }
+            }
+
+            analyzebtn.disabled = false
+            analyzebtn.value = "Analyze"
+        })
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
