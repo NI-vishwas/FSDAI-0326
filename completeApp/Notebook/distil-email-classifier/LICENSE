@@ -1,0 +1,31 @@
+GENERAL TERMS AND CONDITIONS
+
+Note that if you want to use the Commercial licence, please contact us at contact@distillabs.ai
+
+- Model License Terms -
+
+R&D License
+
+1. SERVICES, PRICES AND PAYMENT
+
+    1.1 The Customer pays a one-time license fee, as indicated in the check-out process, for running of one (1) training process of the selected Base Model using Customer Data (“License Fee”).
+
+    1.2 The License Fee shall be due for payment in advance. The Customer shall only be permitted to set off against payment claims of Distil Labs if the Customer’s claims are undisputed or have become res judicata.
+
+2. MODEL LICENSE: R&D LICENSE
+
+    2.1 Subject to Customer’s payment of the license fee, Distil Labs grants to Customer the Model License (as defined below). For clarification, Distil Labs retains any other rights in its software or know- how, in particular in the codebase needed for the fine-tuning of the Trained Model.
+
+    2.2 Subject to the requirements of the Base Model License (cf. Section 2.5 below), Distil Labs transfers to the Customer the perpetual, non-exclusive usage right to the Trained Model for non-commercial purposes of prototyping and research & development. The Parties agree, that commercial purposes include deployment in production externally (to be used by Customer’s customers paid or free of charge) or internally (as a tool for Customer’s employees). The territorial scope of the license is limited to the use within the United States of America and the European Economic Area including all member states of the European Union (“Model License”).
+
+    2.3 The Model License for non-commercial purposes of prototyping and research & development shall include (i) the non-exclusive right to permanent or temporary reproduction, in whole or in part, by any means and in any form (e.g. permanent and/or volatile storage on electrical, electromagnetic, optical storage media, such as any type of SDD, HDD, DVD, memory cards, USB sticks), (ii) the non-exclusive right to distribution in any form, media and by any means regardless of whether the distribution is in tangible or intangible form, in particular to transmit the Trained Model via wired and wireless networks (e.g. for download from internet or intranet by wire or wireless means including broadband, cable, fiberglass, WIFI, LTE, 5G, satellite internet, other data networks), and (iii) the non-exclusive right of making available to the public in such a way that members of the public can access it from places and at times of their choice (e.g. by web or mobile app, virtual or augmented reality, cloud storage, cloud hosting, decentralized hosting, non-fungible token, application service providing, software as a service, or cloud computing). The license shall also contain, to the extent necessary for prototyping and research & development, the right to adapt and modify the Trained Model subject to the limitation in Section 2.4 and 2.5 below, to further develop the Trained Model including changes to functions or appearance, adapt to other software versions, to exchange parts of the Trained Model or combine the Trained Model with other results of work and to use the results in the same way as the original Trained Model. Any derived models from the Trained Model shall retain this model license.
+
+    2.4 The Customer shall not, without the prior written consent of Distil Labs:
+
+        2.4.1 train, fine-tune, re-train, or otherwise modify the Trained Model, unless for purpose of research & development;
+
+        2.4.2 use the Trained Model or any part thereof to create derivative models or services that compete with those of Distil Labs;
+
+        2.4.3 circumvent any technical restrictions embedded in the Trained Model or Base Model that are designed to enforce usage limitations.
+
+    2.5 The Parties acknowledge and agree that the Trained Model is developed from Base Models which are supplied by a third party. Therefore, the Model License is subject to the restrictions resulting from the open-source or any other applicable license of the Base Model (“Base Model License”) and the Customer must use the Trained Model in compliance with the Base Model License. In particular, the Customer must oblige their clients to compliance with the Base Model License in any case of transferring or sublicensing the rights to or making available in any way the Trained Model. The applicable Base Model License is defined in the Training Configuration and will be provided for download. The Customer agrees to indemnify Distil Labs for any and all claims brought by the Base Model provider for violations of the Base Model License.
