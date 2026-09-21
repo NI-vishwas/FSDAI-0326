@@ -1,0 +1,71 @@
+[project]
+# Only needed so uv/pip recognizes it as a project
+name = "ai-apps-to-explore"
+version = "0.0.0"
+description = "A collection of tutorial apps"
+requires-python = ">=3.11,<3.14"
+
+# Dependencies you need
+dependencies = [
+    "langgraph>=1.0.0",
+    "langchain>=1.3.10",
+    "langchain-core>=1.4.0",
+    "langchain-openai>=1.1.14",
+    "langchain-anthropic>=1.4.6",
+    "sqlalchemy>=2.0",
+    "jupyter>=1.0.0",
+    "langgraph-cli[inmem]>=0.4.0",
+    "langchain-mcp-adapters",
+    "langchain-ollama>=1.0.1",
+    "requests>=2.34.2",
+]
+
+[project.optional-dependencies]
+# Extra tools for development
+dev = [
+    "nbdime>=4.0.2",
+    "ruff>=0.6.1",
+    "mypy>=1.11.1"
+]
+
+# CVE-2026-32597: PyJWT <=2.11.0 accepts unknown crit header extensions.
+# CVE-2026-4539: Pygments <2.20.0 has ReDoS via GUID matching regex.
+# GHSA-rpm5-65cw-6hj4 / GHSA-x2qx-6953-8485: GitPython <3.1.47 command injection via Git options bypass.
+# Remove these constraints once the parent packages pull in fixed versions.
+[tool.uv]
+constraint-dependencies = [
+    "pyjwt>=2.12.0",
+    "pygments>=2.20.0",
+    "gitpython>=3.1.47",
+]
+
+[tool.ruff]
+# What to check
+lint.select = [
+    "E",    # pycodestyle
+    "F",    # pyflakes
+    "I",    # isort
+    "D",    # pydocstyle
+    "D401", # docstring first line imperative
+    "UP",   # pyupgrade
+]
+
+# Rules to ignore
+lint.ignore = [
+    "T201", # allow print()
+    "UP006", # keep using typing.List etc.
+    "UP007", # allow Union[X, Y]
+    "UP035", # ignore Self type suggestion
+    "D417",  # don't require param docs
+    "E501",  # ignore line length
+    "D101",  # ignore docstring for these labs
+    "D103",  # ignore docstring for these labs
+    "D202",  # ignore extra space after docstring requirement
+]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["D", "UP"]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
